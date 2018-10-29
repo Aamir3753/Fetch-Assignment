@@ -20,13 +20,19 @@
             height: 100px;
             overflow: auto;
         }
+        .display-1{
+            text-align:center;
+        }
     </style>
     <div class="container">
+        <div class="row">
+            <div class="col"><h1 class="display-1 text-primary">Fetch Github Users</h1></div>
+        </div>
         <div class="row">
             <div class="col-md-8">
                 <form id="myForm" novalidate>
                     <div class="form-group">
-                        <input type="text" placehoder="Enter github username" class="form-control" id="userName" required>
+                        <input type="text" placeholder="Enter github username" class="form-control" id="userName" required>
                         <div id="inputError"></div>
                     </div>
                     <button type="submit" class="btn btn-success " id="submit">Get UserInfo</button>
