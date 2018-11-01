@@ -11,7 +11,7 @@ var filesToCache = [
 ];
 self.addEventListener('install', (e) => {
     console.log('[serviceWorker] install');
-    e.waitUntill(
+    e.waitUntil(
         caches.open(dataCacheName).then(cache => {
             console.log('[serviceWorker] Cachig app shell');
             return cache.addAll(filesToCache);
@@ -27,7 +27,7 @@ self.addEventListener('fetch', (e) => {
     )
 });
 self.addEventListener('activate',(e)=>{
-    e.waitUntill(
+    e.waitUntil(
         caches.keys().then((keyList)=>{
             return Promise.all(
                 keyList.map(key=>{
