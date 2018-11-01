@@ -1,0 +1,15 @@
+{
+    "name": "GitHub Users",
+    "short_name": "User",
+    "icons": [
+        {
+            "src": "./aamir.png",
+            "sizes": "310x310",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#0f76c8",
+    "background_color": "#7ba6c8",
+    "display": "standalone",
+    "start_url": "/index.html"
+}
